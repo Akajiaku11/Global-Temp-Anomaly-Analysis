@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Temperature Anomaly Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Global Temperature Anomaly Analysis</h1>
+        <p>Analyze global temperature trends and detect anomalies over decades.</p>
+
+        <canvas id="temperatureChart"></canvas>
+
+        <div class="controls">
+            <label for="yearRange">Select Year Range:</label>
+            <input type="range" id="yearRange" min="1880" max="2023" step="1" value="1880">
+            <span id="yearValue">1880</span>
+        </div>
+
+        <div class="info">
+            <p><strong>Note:</strong> Anomalies are detected when the temperature deviation is above a certain threshold compared to the average.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
